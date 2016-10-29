@@ -71,6 +71,7 @@ public class PolynomialFunction {
 	 */
 	public void parseStringToPolynomial(String expression) {
 		//FIXME Robusting regex
+		expression = expression.replaceAll("(\\s|\\n)", "");
 		Pattern pattern = Pattern.compile("[+]?(-?\\d+)?[x]?(\\^(-?\\d+))?");
 		Matcher matcher = pattern.matcher(expression);
 		while (matcher.find()) {
