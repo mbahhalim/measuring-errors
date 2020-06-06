@@ -1,7 +1,7 @@
 package com.jtk14b.numericalcomputation;
 
 public class DerivativeCalculator {
-	//TODO Adding comments
+	//TODO Adding comments next time
 	public static double getApproximateValue(
 			PolynomialFunction function,
 			double x,
